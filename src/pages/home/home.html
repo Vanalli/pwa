@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center class="oleo-script">Denigram</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="camera"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-tabs>
+    <ion-tab tabIcon="home" [root]="photosTab"></ion-tab>
+    <ion-tab tabIcon="search" [root]="profileTab"></ion-tab>
+    <ion-tab tabIcon="add-circle" class="add-tab-icon" [root]="profileTab"></ion-tab>
+    <ion-tab tabIcon="heart" [root]="profileTab"></ion-tab>
+    <ion-tab tabIcon="contact" [root]="profileTab"></ion-tab>
+  </ion-tabs>
+</ion-content>
